@@ -1,0 +1,18 @@
+// navbar.jade
+
+#navbar
+	.closure
+		.container.rel
+			.navbar-navigation.tt_
+				ul.menu
+					li.menu-item
+						a(href='/') Made by Chris
+			.navbar-namespace
+				h1#name-outlet The Happy Birthday App
+				h2#call-outlet Send as a Link
+			//-
+				- var jobs = ['Software Engineer','Web Developer','Interface Designer',"Ladies' Man",'Track Runner']
+				- var rand = Math.floor(Math.random()*jobs.length-1)+1
+				- var job = jobs.splice(rand, 1)
+				h2(title='and '+jobs.join(', ')+'.') by Chris, a #{job}
+	

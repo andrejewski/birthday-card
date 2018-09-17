@@ -1,0 +1,118 @@
+/* business.css */
+
+html, #page {background-color: #AA6600;}
+#page {padding: 60px 0px;}
+
+#greet {min-width: 500px;}
+
+#splash {background-color: #32ad64; padding: 20px 0px;}
+#splash h1, #locale h1 {color: #fff; font-size: 2.8em; font-weight: 400;}
+#splash h2, #locale h2 {color: #fff; font-weight: 300;}
+
+.cover-btn {display: inline-block; text-decoration: none !important; color: #fff; border: 1px solid transparent; padding: 0.5em 1em; font-size: 1.5em; margin-bottom: 1em; border-radius: 3px;}
+.cover-btn-primary {border: 1px solid #fff;}
+.cover-btn-primary:hover {background-color: #fff; color: #32ad64;}
+
+.btn-primary {color: #32ad64; border: 1px solid #32ad64;}
+.btn-primary:hover {background-color: #32ad64; color: #fff;}
+.btn-secondary {}
+
+#skills {line-height: 1.5em;}
+.skill {color: #222;}
+.skill:nth-child(even) {color: #444;}
+
+#lightbox {background-color: #333;}
+#locale {background: url(erie.jpg) center; background-size: cover; padding: 100px 0px;}
+
+#cake {display: block; position: relative; margin-top: 100px; height: 410px;}
+#plate {position: absolute; bottom: 0px; left: 0px; right: 0px;}
+.candles {text-align: center;}
+.candle {display: inline-block; position: relative; background-color: #fee; height: 100px; width: 20px; margin: 0px 30px; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.candle {
+	-webkit-animation: bumpy 2s infinite;
+	-moz-animation: bumpy 2s infinite;
+	-o-animation: bumpy 2s infinite;
+	animation: bumpy 2s infinite;
+}
+.candle:nth-child(2n) {
+	 -webkit-animation-delay: 1s; animation-delay: 1s;
+}
+
+.wick {background-color: #333; position: relative; top: -5px; width: 4px; height: 10px; margin: 0px auto;}
+.flame {position: absolute; top: -10px; left: 0px; right: 0px;}
+.light {position: absolute; border-radius: 50% 25%;
+	-webkit-animation: flicker 2s infinite; 
+	-moz-animation: flicker 2s infinite; 
+	-o-animation: flicker 2s infinite; 
+	animation: flicker 2s infinite; 
+}
+.ll-light {background-color: rgba(255,255,255,0.5); top: -20px; bottom: -10px; left: -5px; right: -5px; -webkit-animation-delay: 1s; animation-delay: 1s;}
+.sm-light {background-color: rgba(255,255,255,0.25); top: -60px; bottom: -30px; left: -20px; right: -20px; -webkit-animation-delay: 2s; animation-delay: 2s;}
+.md-light {background-color: rgba(255,255,255,0.12); top: -180px; bottom: -90px; left: -80px; right: -80px; -webkit-animation-delay: 3s; animation-delay: 3s;}
+.lg-light {background-color: rgba(255,255,255,0.07); top: -320px; bottom: -180px; left: -360px; right: -360px; -webkit-animation-delay: 4s; animation-delay: 4s;}
+
+@-webkit-keyframes bumpy {
+	0% {height: 100px;}
+	33% {height: 80px;}
+	66% {height: 120px;}
+	100% {height: 100px;}
+}
+
+@-webkit-keyframes flicker {
+	0% {border-radius: 50% 25%; -webkit-transform: scale(1);}
+	33% {border-radius: 25% 50%; -webkit-transform: scale(0.9);}
+	66% {border-radius: 50% 50%; -webkit-transform: scale(0.8);}
+	100% {border-radius: 50% 25%; -webkit-transform: scale(1);}
+}
+
+@-webkit-keyframes squish {
+	0% {height: 150px;}
+	33% {height: 160px;}
+	66% {height: 140px;}
+	100% {height: 150px;}
+}
+
+@keyframes bumpy {
+	0% {height: 100px;}
+	33% {height: 80px;}
+	66% {height: 120px;}
+	100% {height: 100px;}
+}
+
+@keyframes flicker {
+	0% {border-radius: 50% 25%; transform: scale(1);}
+	33% {border-radius: 25% 50%; transform: scale(0.9);}
+	66% {border-radius: 50% 50%; transform: scale(0.8);}
+	100% {border-radius: 50% 25%; transform: scale(1);}
+}
+
+@keyframes squish {
+	0% {height: 150px;}
+	33% {height: 160px;}
+	66% {height: 140px;}
+	100% {height: 150px;}
+}
+
+.layer-uno, .layer-dos {background-color: #fef; position: relative;
+	 -webkit-animation: squish 2s infinite ease-in-out; 
+	 -moz-animation: squish 2s infinite ease-in-out; 
+	 -o-animation: squish 2s infinite ease-in-out; 
+	 animation: squish 2s infinite ease-in-out; 
+}
+.layer-uno {margin: 0px 60px; height: 150px;}
+.layer-dos {margin: 0px 00px; height: 150px;}
+.layer-bottom {background-color: #fef; position: relative;}
+.glaze2 {background-color: #0af; position: absolute; top: -10px; left: -10px; right: -10px; bottom: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.glaze {background-color: #0af; position: absolute; top: -10px; left: -5px; right: -5px; height: 10px;border-radius: 10px;}
+
+#message {margin: 2em;}
+#message p {font-size: 40px; color: #fff; text-align: center;}
+
+#bday-form .bpart {margin-bottom: 1em;}
+#bday-form h1 {display: block; color: #fff;}
+#bday-form label {display: block; color: #fff; font-size: 20px;}
+#bday-form input[type='text'] {border: none; padding: 20px; font-size: 25px; outline: none; margin: 10px 0px;}
+#bday-form .opt {padding: 10px 20px;}
+#bday-form .opt span {margin-left: 20px;}
+#bday-form input[type='submit'] {background-color: rgba(255,255,255,0.5); color: #AA6600; border: none; padding: 20px; font-size: 20px; outline: none; margin: 10px 0px;}
+#bday-form input[type='submit']:hover {background-color: #fff; cursor: pointer;}

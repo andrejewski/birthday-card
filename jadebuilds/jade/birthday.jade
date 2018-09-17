@@ -1,0 +1,53 @@
+// home.jade
+
+extends ./layout
+
+block head
+	link(rel='stylesheet', href='css/birthday.css')
+block base
+	script(type='text/javascript', src='css/birthday.js')
+
+block body
+	#greet.section
+		.navbar-fold
+		.closure
+			.container
+				#cake
+					#plate
+						.candles
+							for i,n in '12345'.split('')
+								.candle
+									.wick
+										.flame
+											.light.lg-light
+											.light.md-light
+											.light.sm-light
+											.light.ll-light
+						.layer.layer-uno
+							.glaze
+						.layer.layer-dos
+							.glaze
+						.layer-bottom
+							.glaze
+						.plate
+						.plate-bottom
+				#message		
+					p#song-outlet
+
+				form#bday-form(style='display:none;', method='get')
+					h1 Create a Birthday Card
+					.name.bpart
+						label(for='name') Recipient's Name
+						input#name(type='text', name='to', placeholder='Kevin')
+					.song.bpart
+						label Birthday Song
+						.radios
+							label(for='traditional').opt
+								input#traditional(type='radio', name='song', value='t') 
+								span Traditional
+							label(for='futurama').opt
+								input#futurama(type='radio', name='song', value='f') 
+								span Futurama
+					input(type='submit', value='Create Birthday Card')
+					
+

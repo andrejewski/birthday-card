@@ -1,0 +1,28 @@
+!!! html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+		meta(http-equiv='Content-type', content='text/html;charset=UTF-8')
+
+		title 
+			block title
+				| Happy Birthday!
+
+		block keywords
+			meta(name="keywords", content="chris, andrejewski, software, engineer, solutions, website, developer, programmer, designer")
+
+		block description
+			meta(name="description", content="Chris Andrejewski is a software engineer who builds websites, apps, marketplaces, business tools, web presences, and much more for a lucky few.")
+
+		link(href='/favicon.ico', rel='shortcut icon', type='image/x-icon')
+		link(rel='stylesheet', href='css/style.css')
+
+		block head
+	body
+		#card.loading
+			include ./navbar
+			#page
+				block body
+			block base
